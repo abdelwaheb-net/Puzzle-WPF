@@ -1,0 +1,18 @@
+﻿<Window x:Class="PuzzleWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="394.737" Width="338.158" Initialized="Window_Initialized">
+    <Grid Initialized="Grid_Initialized">
+        <Grid x:Name="GridButton" HorizontalAlignment="Left" Height="270" Margin="10,10,0,0" VerticalAlignment="Top" Width="270">
+            <Button Content="" HorizontalAlignment="Left" Height="90" Margin="0,4,0,0" VerticalAlignment="Top" Width="90"/>
+            <Button Content="" HorizontalAlignment="Left" Height="90" Margin="90,4,0,0" VerticalAlignment="Top" Width="90"/>
+            <Button Content="" HorizontalAlignment="Left" Height="90" Margin="180,4,0,0" VerticalAlignment="Top" Width="90"/>
+            <Button Content="" HorizontalAlignment="Left" Height="90" Margin="0,97,0,0" VerticalAlignment="Top" Width="90"/>
+            <Button Content="" HorizontalAlignment="Left" Height="90" Margin="90,97,0,0" VerticalAlignment="Top" Width="90"/>
+            <Button Content="" HorizontalAlignment="Left" Height="90" Margin="180,97,0,0" VerticalAlignment="Top" Width="90"/>
+            <Button Content="" HorizontalAlignment="Left" Height="90" Margin="0,181,0,-1" VerticalAlignment="Top" Width="90"/>
+            <Button Content="" HorizontalAlignment="Left" Height="90" Margin="90,181,0,-1" VerticalAlignment="Top" Width="90"/>
+        </Grid>
+        <Button Content="Start Game" HorizontalAlignment="Left" Height="46" Margin="36,303,0,0" VerticalAlignment="Top" Width="231" Click="Button_Click"/>
+    </Grid>
+</Window>
