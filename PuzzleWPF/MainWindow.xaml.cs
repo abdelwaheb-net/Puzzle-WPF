@@ -21,6 +21,7 @@ namespace PuzzleWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        //Create EmptyPoint 
         Point EmptyPoint = new Point();
         ArrayList images = new ArrayList();
         public MainWindow()
@@ -40,10 +41,10 @@ namespace PuzzleWPF
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
-            foreach (Button b in GridButton.Controls)
-            {
+            //foreach (Button b in GridButton.Controls)
+            //{
                 
-            }
+            //}
         }
 
       
