@@ -4,8 +4,7 @@ cd "curl"
 
 set GIT_PATH="C:\Program Files\Git\bin\git.exe"
 set BRANCH = "origin"
-%GIT_PATH% config --global user.email "you@example.com"
-%GIT_PATH% config --global user.name "Your Name"
+
 :P
 set ACTION=
 set /P ACTION=Action: %=%
