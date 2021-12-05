@@ -17,8 +17,8 @@ if "%AddACTION%"=="y" (
 %GIT_PATH% status
 echo type Nom de BRANCH
 
-set MessageCommit=
-set /P MessageCommit=Message de Commit: %=%
+set Message=
+set /P Message=Message: %=%
 %GIT_PATH% commit -am "%BRANCH%/%MessageCommit%"
 
 %GIT_PATH% push -u origin %BRANCH%
