@@ -11,7 +11,11 @@ set /P BRANCH=BRANCH: %=%
 %GIT_PATH% status
 %GIT_PATH% add -A
 %GIT_PATH% status
-%GIT_PATH% commit -am "%BRANCH%"
+echo type Nom de BRANCH
+cd "curl"
+set MessageCommit=
+set /P MessageCommit=Message de Commit: %=%
+%GIT_PATH% commit -am "%MessageCommit%"
 
 %GIT_PATH% push -u origin %BRANCH%
 echo "%BRANCH%"
