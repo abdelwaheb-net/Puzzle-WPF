@@ -11,6 +11,6 @@ set /P ACTION=Action: %=%
 %GIT_PATH% add -A
 %GIT_PATH% commit -am "%ACTION%"
 
-%GIT_PATH% push -u %BRANCH% %ACTION%
+%GIT_PATH% push -u  %ACTION%
 echo "%BRANCH%"
 if "%ACTION%"=="exit" exit /b
