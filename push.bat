@@ -19,7 +19,7 @@ echo type Nom de BRANCH
 
 set Message=
 set /P Message=Message: %=%
-%GIT_PATH% commit -am "%BRANCH%/%Message%"
+%GIT_PATH% commit -am "%BRANCH% %Message%"
 
 %GIT_PATH% push -u origin %BRANCH%
 echo "%BRANCH%"
