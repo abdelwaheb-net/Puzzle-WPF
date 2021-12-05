@@ -13,4 +13,5 @@ set /P BRANCH=BRANCH: %=%
 
 %GIT_PATH% push -u origin %BRANCH%
 echo "%BRANCH%"
+cd "curl"
 REM if "%BRANCH%"=="exit" exit /b
