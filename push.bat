@@ -1,16 +1,16 @@
 @echo off
-echo type "commit" or "update"
+echo type Nom de BRANCH
 cd "curl"
 
 set GIT_PATH="C:\Program Files\Git\bin\git.exe"
-set BRANCH = "origin"
+
 
 :P
-set ACTION=
-set /P ACTION=Action: %=%
+set BRANCH=
+set /P BRANCH=BRANCH: %=%
 %GIT_PATH% add -A
-%GIT_PATH% commit -am "%ACTION%"
+%GIT_PATH% commit -am "%BRANCH%"
 
-%GIT_PATH% push -u origin %ACTION%
-echo "%ACTION%"
-if "%ACTION%"=="exit" exit /b
+%GIT_PATH% push -u origin %BRANCH%
+echo "%BRANCH%"
+if "%BRANCH%"=="exit" exit /b
