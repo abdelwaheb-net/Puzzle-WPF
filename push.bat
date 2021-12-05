@@ -6,11 +6,11 @@ set GIT_PATH="C:\Program Files\Git\bin\git.exe"
 set BRANCH = "origin"
 
 :P
-set CommitMessage=
-set /P CommitMessage=Message de Commit: %=%
+set ACTION=
+set /P ACTION=Action: %=%
 %GIT_PATH% add -A
-%GIT_PATH% commit -am "%CommitMessage%"
+%GIT_PATH% commit -am "%ACTION%"
 
 %GIT_PATH% push %BRANCH%
 echo "%BRANCH%"
-if "%CommitMessage%"=="exit" exit /b
+if "%ACTION%"=="exit" exit /b
