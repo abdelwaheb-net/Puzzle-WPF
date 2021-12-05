@@ -15,7 +15,7 @@ echo type Nom de BRANCH
 cd "curl"
 set MessageCommit=
 set /P MessageCommit=Message de Commit: %=%
-set commit=%BRANCH% / %MessageCommit%
+set commit=%BRANCH%/%MessageCommit%
 %GIT_PATH% commit -am "%commit%"
 
 %GIT_PATH% push -u origin %BRANCH%
