@@ -16,3 +16,4 @@ set /P BRANCH=BRANCH: %=%
 %GIT_PATH% push -u origin %BRANCH%
 echo "%BRANCH%"
 if "%BRANCH%"=="exit" exit /b
+pause
